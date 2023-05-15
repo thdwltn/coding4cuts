@@ -1,0 +1,75 @@
+.p{
+    color: blueviolet;
+}
+/* body태그 자체에 css 요소 부여 */
+body {
+	font-family: "LeeSeoyun";
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	background: url("../images/frame1.jpg") 50% 50% no-repeat;
+   	/* background-color: black */
+}
+.container{
+    width: 390px;
+    background-color: #ff9d73;
+    height: 100%;
+    margin-top: 100px;
+    box-shadow: 20px 20px 20px #00000056;
+}
+.photos{
+    margin-top: 30px;
+}
+.photo-frame{
+    background-color: #fff;
+    margin: 15px 20px;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-date{
+    color: #fff;
+    font-size: 15px;
+}
+.f-title{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* img */
+#img1{
+    background-image: url('../images/js1.jpg');  
+}
+#img2{
+    background-image: url('../images/js2.jpg');   
+}
+#img3{
+    background-image: url('../images/js3.jpg');   
+}
+#img4{
+    background-image: url('../images/js4.jpg');   
+}
+.photo-description{
+    color: #fff;
+    background-color: #000;
+    width: fit-content;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translate(-50%);
+}
+.showText{
+    opacity: 0;
+}
+.hideText{
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
